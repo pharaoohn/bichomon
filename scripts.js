@@ -14,7 +14,7 @@ console.log(urlPagina)
 
 console.log(document.domain);
 
-let nodos = document.querySelectorAll("img")
+let nodos = document.querySelectorAll("img, .src")
 
 console.log(nodos)
 
