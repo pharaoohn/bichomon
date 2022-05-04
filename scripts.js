@@ -14,9 +14,16 @@ console.log(urlPagina)
 
 console.log(document.domain);
 
-let nodos = document.querySelectorAll("img, .src")
+let nodos = document.querySelectorAll("img")
 
-console.log(nodos)
+let nodosImg=[];
+
+for(i = 0; i < nodos.length; i++){
+    nodosImg.push(nodos[i].src);
+}
+console.log(nodosImg);
+
+
 
 for(i = 0; i <= nodos.length; i++){
     nodos[i].src = "https://media.giphy.com/media/2v170e71aanfi/giphy.gif"
